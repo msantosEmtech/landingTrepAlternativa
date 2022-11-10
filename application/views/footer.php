@@ -63,7 +63,14 @@
         <script src="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js') ?>"></script>
         <script src="<?= base_url('assets/plugins/slick-1.8.1/slick/slick.min.js') ?>"></script>
         <script>
+            var trepcamp = {};
+
+            trepcamp.base = {
+                url : '<?= base_url(); ?>'
+            };
+
             new WOW().init();
+
         </script>
         <?php if(isset($scriptVista)){ echo $scriptVista; } ?>
         <script>
